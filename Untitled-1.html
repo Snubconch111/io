@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>输入数字你这个左倾分子！</title>
+</head>
+<body>
+    
+    <h1>输入数字你这个左倾分子！</h1>
+    <form onsubmit="handleSubmit(event)">
+        <label for="number1">第一个数字:</label>
+        <input type="number" id="number1" name="number1" required>
+        <br><br>
+        <label for="number2">第二个数字:</label>
+        <input type="number" id="number2" name="number2" required>
+        <br><br>
+        <button type="submit">提交</button>
+        <h1>
+
+            空行
+        </h1>
+        <img src="https://www.ntet.cn/uploads/images/20230511/20230511104256_26729.png" alt="" width="500" height="300">
+    </form>
+    <div id="output"></div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const number1 = parseInt(document.getElementById('number1').value);
+            const number2 = parseInt(document.getElementById('number2').value);
+            const outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = '';
+
+            if (number1 > 5) {
+                
+                    outputDiv.innerHTML += "        你这个玩原神的右倾分子，操你妈的";
+                
+            } else if (number1 < 5) {
+                if (number2 > 5) {
+                    
+                        outputDiv.innerHTML += "    终于上钩了，准备起飞把哈哈哈哈哈哈哈哈哈哈"
+                        
+                    
+                } else {
+                    
+                    outputDiv.innerHTML += "        终于上钩了你这个右倾分子，装逼我让你飞起来！";
+                    
+                }
+
+            }
+            
+        }
+    </script>
+    
+    <footer><h1>广告：</h1><a href="https://www.bilibili.com/video/BV1kW411m7VP/">吴旭淳叽霸图</a></footer>
+</body>
+</html>
